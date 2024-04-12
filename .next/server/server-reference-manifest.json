@@ -2,12 +2,12 @@
   "node": {
     "8b9c3e328687ba17006488c905b2768432c0ae9b": {
       "workers": {
-        "app/dashboard/invoices/create/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22createInvoice%22%5D%5D%5D&__client_imported__=!",
+        "app/dashboard/invoices/create/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22createInvoice%22%2C%22updateInvoice%22%2C%22deleteInvoice%22%5D%5D%5D&__client_imported__=true!",
         "app/dashboard/invoices/[id]/edit/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22createInvoice%22%2C%22updateInvoice%22%2C%22deleteInvoice%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/invoices/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22deleteInvoice%22%2C%22createInvoice%22%2C%22updateInvoice%22%5D%5D%5D&__client_imported__=!"
+        "app/dashboard/invoices/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22updateInvoice%22%2C%22createInvoice%22%2C%22deleteInvoice%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/dashboard/invoices/create/page": "rsc",
+        "app/dashboard/invoices/create/page": "action-browser",
         "app/dashboard/invoices/[id]/edit/page": "action-browser",
         "app/dashboard/invoices/page": "rsc"
       }
@@ -15,21 +15,25 @@
     "bf58d4f72fbe992f7eb1b8e03b1252e47ddb8079": {
       "workers": {
         "app/dashboard/invoices/[id]/edit/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22createInvoice%22%2C%22updateInvoice%22%2C%22deleteInvoice%22%5D%5D%5D&__client_imported__=true!",
-        "app/dashboard/invoices/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22deleteInvoice%22%2C%22createInvoice%22%2C%22updateInvoice%22%5D%5D%5D&__client_imported__=!"
+        "app/dashboard/invoices/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22updateInvoice%22%2C%22createInvoice%22%2C%22deleteInvoice%22%5D%5D%5D&__client_imported__=!",
+        "app/dashboard/invoices/create/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22createInvoice%22%2C%22updateInvoice%22%2C%22deleteInvoice%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
         "app/dashboard/invoices/[id]/edit/page": "action-browser",
-        "app/dashboard/invoices/page": "rsc"
+        "app/dashboard/invoices/page": "rsc",
+        "app/dashboard/invoices/create/page": "action-browser"
       }
     },
     "51e0b5c950b72b53ee0fef26d6b35a4978e2848c": {
       "workers": {
-        "app/dashboard/invoices/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22deleteInvoice%22%2C%22createInvoice%22%2C%22updateInvoice%22%5D%5D%5D&__client_imported__=!",
-        "app/dashboard/invoices/[id]/edit/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22createInvoice%22%2C%22updateInvoice%22%2C%22deleteInvoice%22%5D%5D%5D&__client_imported__=true!"
+        "app/dashboard/invoices/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22updateInvoice%22%2C%22createInvoice%22%2C%22deleteInvoice%22%5D%5D%5D&__client_imported__=!",
+        "app/dashboard/invoices/[id]/edit/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22createInvoice%22%2C%22updateInvoice%22%2C%22deleteInvoice%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/invoices/create/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDocuments%5C%5CWeb%20Development%5C%5CREPOS%5C%5Cnextjs-dashboard%5C%5Capp%5C%5Clib%5C%5Cactions.tsx%22%2C%5B%22createInvoice%22%2C%22updateInvoice%22%2C%22deleteInvoice%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
         "app/dashboard/invoices/page": "rsc",
-        "app/dashboard/invoices/[id]/edit/page": "action-browser"
+        "app/dashboard/invoices/[id]/edit/page": "action-browser",
+        "app/dashboard/invoices/create/page": "action-browser"
       }
     }
   },
